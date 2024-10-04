@@ -1,9 +1,11 @@
-# LGACSmartThing
-*This plugin uses the [wideq](https://github.com/sampsyo/wideq) modified library.*
+# LGACSmartThingGV
+*** Under construction ***
+*This plugin uses the [wideq]([https://github.com/sampsyo/wideq) modified library.](https://pypi.org/project/wideq/#description) library. Release 1.5.0)*
 *This plugin contains some modified functions from the [domoticz-mirobot-plugin](https://github.com/mrin/domoticz-mirobot-plugin) library.*
 *This plugin contains some modified functions from the  [domoticz_daikin_BRP069A42](https://github.com/leejoow/domoticz_daikin_BRP069A42) library.*
 LG AC Smarthing Unit control for Domoticz
-
+Plugin and server have been copied from olinek2/LGAC_SmartT(https://github.com/olinek2/LGAC_SmartT)
+Many thanks for the hard work a couple of years ago.
 
 Before installation plugin check the `python3`, `python3-dev`, `pip3` is installed for Domoticz plugin system:
 
@@ -23,12 +25,12 @@ Install all necessary libraries for LGACServer.py:
 
 Install [LGAC_SmartT] by typing something like:
 ```
-$ git clone https://github.com/olinek2/LGAC_SmartT
-$ cd LGAC_SmartT
+$ git clone https://github.com/GertVersteeg1956/LGAC_SmartTGV
+$ cd LGAC_SmartTGV
 $ sudo pip3 install -e .
 ```
 
-Update region data inside wideq.py file. For US it looks like this:
+?? Update region data inside wideq.py file. For US it looks like this:
 
 ```
 GATEWAY_URL = 'https://kic.lgthinq.com:46030/api/common/gatewayUriList'
@@ -65,8 +67,8 @@ To do that just open it in nano and save (Ctrl+X. yes and enter):
 
 Authenticate with the SmartThing service to get a refresh token by running the WideQ example script.Run this in the `wideq` directory:
 
-```python3 example.py```
-
+```python3 example.py -c NL -l nl-NL```
+Choose your own language and country
 The script will ask you to open a browser, log in, and then paste the URL you're redirected to. It will then write a JSON file called `wideq_state.json`.
 
 Look inside this file for a key called `"refresh_token"` and copy the value.
