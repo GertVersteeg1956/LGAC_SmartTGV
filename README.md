@@ -1,5 +1,5 @@
 # LGACSmartThingGV
-*** Under construction ***
+*** Under construction ***</br>
 *This plugin uses the [wideq]([https://github.com/sampsyo/wideq) modified library.](https://pypi.org/project/wideq/#description) library. Release 1.5.0)*
 *This plugin contains some modified functions from the [domoticz-mirobot-plugin](https://github.com/mrin/domoticz-mirobot-plugin) library.*
 *This plugin contains some modified functions from the  [domoticz_daikin_BRP069A42](https://github.com/leejoow/domoticz_daikin_BRP069A42) library.*
